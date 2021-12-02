@@ -68,6 +68,15 @@ h3 {
   background-size: contain;
 }
 
+/*
+* Snowflake Effects And Styles
+*/
+
+body {
+    background: red;
+    color: white;
+}
+
 .snowflake {
   color: #fff;
   font-size: 1em;
