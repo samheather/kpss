@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Secret Santa</title>
+    
+</head>
+
+<body>
+    <br />
+    <div class="align-center centered">
+        <img src="images/logo.png">
+        <h1 class="header-color faq-header">KodyPay Secret Santa</h1>
+        <h3><i>Your Secret Santa is...</i></h3>
+        <h2>PERSON_NAME</h2>
+    </div>
+    
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const person_name = urlParams.get('PERSON_NAME');
+        document.body.innerHTML = document.body.innerHTML.replace(/PERSON_NAME/g, person_name);
+    </script>
+    
+</body>
+
+</html>

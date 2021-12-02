@@ -1,0 +1,51 @@
+@font-face {
+    font-family: system;
+    src: local("-apple-system"), local("system-ui"), local("BlinkMacSystemFont"), local("Segoe UI"), local("Roboto"), local("Ubuntu");
+}
+
+body {
+    background-color: #f6f6f6;
+    padding-top: 0px;
+    color: #626262;
+    font-family: system;
+}
+
+.align-center {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 2.3em;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+}
+
+h2 {
+    margin-top: 13px !important;
+    margin-bottom: 13px !important;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+}
+
+h3 {
+    margin-top: 14px !important;
+    margin-bottom: 14px !important;
+    font-size: 1.15em;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: -30px;
+}
+
