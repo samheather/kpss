@@ -1,14 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: system;
   src: local("-apple-system"), local("system-ui"), local("BlinkMacSystemFont"),
     local("Segoe UI"), local("Roboto"), local("Ubuntu");
-}
+} */
 
 body {
   background-color: #f6f6f6;
   padding-top: 0px;
-  color: #626262;
-  font-family: system;
+  color: hsl(0, 0%, 38%);
+  font-family: "Brush Script MT";
 }
 
 .align-center {
@@ -17,7 +17,7 @@ body {
 
 h1 {
   margin-bottom: 0px;
-  font-size: 2.3em;
+  font-size: 3.3rem;
   margin-left: 8px;
   margin-right: 8px;
   font-weight: 500;
@@ -27,7 +27,7 @@ h1 {
 h2 {
   margin-top: 13px !important;
   margin-bottom: 13px !important;
-  font-size: 1.3em;
+  font-size: 2.3rem;
   font-weight: 600;
   letter-spacing: 0.005em;
 }
@@ -35,7 +35,7 @@ h2 {
 h3 {
   margin-top: 14px !important;
   margin-bottom: 14px !important;
-  font-size: 1.15em;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
