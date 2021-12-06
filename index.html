@@ -11,25 +11,73 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Secret Santa</title>
-    
+
 </head>
 
 <body>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
     <br />
-    <div class="align-center centered">
+    <div class="cover-image" id="cover-image" |></div>
+    <div class="align-center centered" id="secret">
         <img src="images/logo.png">
         <h1 class="header-color faq-header">KodyPay Secret Santa</h1>
         <h3><i>Your Secret Santa is...</i></h3>
         <h2>PERSON_NAME</h2>
     </div>
-    
+
     <script>
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const person_name = urlParams.get('PERSON_NAME');
+
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var person_name = urlParams.get('PERSON_NAME');
         document.body.innerHTML = document.body.innerHTML.replace(/PERSON_NAME/g, person_name);
+
+        setTimeout(function () {
+            var coverImage = document.getElementById('cover-image');
+            coverImage.style.transition = '2s';
+            coverImage.style.opacity = '0';
+            coverImage.style.visibility = 'hidden';
+        }, 2000);
+
+        setTimeout(function () {
+            var secret = document.getElementById('secret');
+            secret.style.display = 'block';
+        }, 3000);
+
     </script>
-    
+
 </body>
 
 </html>
